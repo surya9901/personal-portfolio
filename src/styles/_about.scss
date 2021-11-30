@@ -1,0 +1,170 @@
+.AboutPage {
+  z-index: 3;
+  line-height: 2;
+  margin-right: 0;
+
+ 
+}
+
+.ImageSection {
+   display: flex;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    width: 100%;
+    .kaushan-font{
+        font-family: 'Kaushan Script', cursive;
+    }
+    .about-info{
+        margin-top: -1.5rem;
+        h3{
+            font-size: 2.5rem;
+        }
+       
+    }
+
+     @media screen and (max-width: 1000px){
+        flex-direction: column;
+       
+        .about-info{
+            margin-left: 0;
+            margin-top: 1rem;
+            
+        }
+    }
+}
+
+.about-container{
+    display: flex;
+    width:100%;
+    
+    @media screen and (max-width: 640px){
+         flex-direction: column;
+        flex-wrap: wrap;
+         
+    } 
+    .about-details{
+    display: flex;
+    margin-top: 1rem;
+    
+    .right-section > p, .left-section > p {
+        margin-bottom: 0.5rem;
+    }
+    .right-section{
+        margin-left: 1rem;
+    }
+}
+    .about-details-1{
+         display: flex;
+    margin-top: 1rem;
+    margin-left: 3rem;
+     @media screen and (max-width: 640px){
+        margin-left: 0
+    } 
+    
+    .right-section > p, .left-section > p {
+        margin-bottom: 0.5rem;
+    }
+    .right-section{
+        margin-left: 1rem;
+    }
+    }
+     
+}
+
+
+
+.btn{
+    padding: 1rem 2rem;
+    background-color: $active-color;
+    outline: none;
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    letter-spacing: 2px;
+    margin-top: 1rem;
+    position: relative;
+    border-radius:50px;
+    overflow-x: hidden;
+    &::after{
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 0.5rem;
+        left: 0;
+        bottom: 0;
+        
+        background-color: $bar-color;
+        transition: all 0.4s ease-in-out;
+    }
+    &:hover::after{
+        width: 100%;
+       
+    }
+
+    a{
+        text-decoration: none;
+        text-transform: uppercase;
+        color: inherit;
+        font-weight:500;
+    }
+}
+
+
+.skillsContainer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2.5rem;
+    row-gap: 2rem;
+    margin-top: 4rem;
+    margin-right: 2rem;
+    margin-bottom: 4rem;
+    @media screen and (max-width: 1100px){
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+
+.btn-port{
+    padding: .6rem 2rem;
+    background-color: #0381ff5b;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: inherit;
+    font-family: inherit;
+    color: white;
+    margin-bottom: 1rem;
+    transition: all .3s ease-in-out;
+    &:not(:last-child){
+        margin-right: 1rem;
+    }
+    &:hover{
+        background-color: #037FFF;
+    }
+    &:active{
+        background-color: #037FFF;
+    }
+    &:focus{
+        background-color: #037FFF;
+    }
+    
+
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem 10rem;
+    flex-wrap: wrap;
+    @media screen and (max-width: 1270px){
+        margin: 2rem 5rem;
+    }
+    @media screen and (max-width: 1100px){
+        margin: 2rem 2rem;
+    }
+}

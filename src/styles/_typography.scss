@@ -1,0 +1,66 @@
+.HomePage {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  z-index: 3;
+ 
+}
+
+.intro-text {
+  color: #fff;
+  text-align: center;
+  font-size: 2.5rem;
+  span {
+    color: $active-color;
+    font-size: 3.5rem;
+  }
+
+  @media screen and (max-width: 1000px) {
+    font-size: 1.2rem;
+    span {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+.intro-text-para {
+  text-align: center;
+  font-size: 1.2rem;
+  @media screen and (max-width: 1000px) {
+    font-size: 0.8rem;
+  }
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 0;
+
+  .icon-holder {
+    margin-right: 1rem;
+
+    .icon {
+      font-size: 2.8rem;
+      color: $icon-color;
+      transition: all 0.4s ease-in-out;
+    }
+    .li:hover {
+      color: rgb(8, 113, 145);
+    }
+    .gh:hover {
+      color: rgb(255, 255, 255);
+    }
+    .ig:hover {
+      color: rgb(240, 3, 240);
+    }
+     .be:hover {
+      color: rgb(49, 41, 41);
+    }
+     .fb:hover {
+      color: rgb(20, 45, 128);
+    }
+  }
+}

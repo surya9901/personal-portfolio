@@ -1,0 +1,85 @@
+
+
+/* $primary-color: #2e344e;
+$active-color: #1fc211;
+$icon-color: #a4acc4;
+$bg-color: #2395b1;
+$bar-color: #23b13b;
+$light-color: #0be8f0;  */
+
+
+
+$primary-color: #2e344e;
+$active-color: #037fff;
+$icon-color: #a4acc4;
+$bg-color: #0381ff3f;
+$bar-color: #161158;
+$light-color: #5952b9;  
+
+@import "./styles/_typography";
+@import "./styles/_portfolios";
+@import "./styles/_contact";
+@import "./styles/_layout";
+@import "./styles/_navbar";
+@import "./styles/_title";
+@import "./styles/_about";
+@import "./styles/_skills";
+@import "./styles/services";
+@import "./styles/tech";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color:  #cdd0d8 ;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+}
+
+body::-webkit-scrollbar {
+  width: 5px;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: $bar-color;
+  border-radius: 50px;
+}
+body::-webkit-scrollbar-track {
+  background-color: #2395b1;
+}
+
+.tsparticles-canvas-el {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+span {
+  color: $active-color;
+}
+
+
+@media screen and (max-width: 411px){
+    html{
+        font-size: 70%;
+    }
+    .intro-text{
+      font-size: 10% !important;
+    }
+}
+@media screen and (max-width: 700px){
+    html{
+        font-size: 90%;
+    }
+}
+@media screen and (max-width: 480px){
+    h2{
+        font-size: 70%;
+    }
+    h3{
+        font-size: 70%;
+    }
+}

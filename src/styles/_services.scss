@@ -1,0 +1,55 @@
+.ServicesSection{
+    .service{
+        width: 95%;
+        background-color: #191D2B;
+        border-left: 1px solid $primary-color;
+        border-right: 1px solid $primary-color;
+        border-bottom: 1px solid $primary-color;
+        border-top: 8px solid $primary-color;
+        transition: all .4s ease-in-out;
+        
+        @media screen and (max-width:1400px){
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+        &:hover{
+            border-top: 8px solid $active-color;
+        }
+        
+        .service-content{
+            text-align: center;
+            padding: 1rem;
+            .s-text2{
+                color:$active-color;
+                font-weight: 400;
+            }
+            .s-title{
+                font-size: 1.3rem;
+                font-weight: 500;
+                position: relative;
+                padding-bottom: 0.5rem;
+                margin: 1rem 0;
+                &::after{
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translate(-50%, 0%);
+                    width: 30%;
+                    height: 1px;
+                    background-color: $primary-color;
+                }
+            }
+        }
+    }
+}
+
+.services-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+    @media screen and (max-width:1400px){
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
+}
