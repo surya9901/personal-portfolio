@@ -42,7 +42,7 @@ function App() {
 				<div className='content'>
 					<AnimatePresence exitBeforeEnter>
 						<Switch>
-							<Route exact path='/ramportfolio'>
+							<Route exact path='/'>
 								<HomePage />
 							</Route>
 							<Route exact path='/about'>
